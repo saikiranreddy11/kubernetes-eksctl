@@ -4,7 +4,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: cluster-
+  name: cluster-1
   region: us-east-1
 
 vpc:
@@ -12,7 +12,7 @@ vpc:
   cidr: "10.40.0.0/16"       # (optional, must match CIDR used by the given VPC)
   subnets:
     # must provide 'private' and/or 'public' subnets by availability zone as shown
-    private:
+    public:
       us-east-1b:
         id: "subnet-060dd1184cc0d7b06"
         cidr: "10.40.16.0/20" # (optional, must match CIDR used by the given subnet)
