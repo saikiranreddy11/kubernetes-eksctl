@@ -30,6 +30,6 @@ subnets: ["subnet-056c011dcadbb4283"]
 nodeGroups:
   - name: spot
     instanceType: m5.large
-    desiredCapacity: 3
+    desiredCapacity: 4
     ssh:
       publicKeyName: siva-key
